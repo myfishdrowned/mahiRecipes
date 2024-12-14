@@ -1,0 +1,129 @@
+/* General Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+a,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    /* Light beige background */
+    color: #333;
+    /* Dark gray text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    color: #f4a261;
+    /* Warm orange */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    color: #e76f51;
+    /* Slightly darker orange */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: #2a9d8f;
+    /* Teal */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #264653;
+    /* Dark teal */
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    /* Ensure image is responsive */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+/* List Styling */
+ul,
+ol {
+    margin: 15px 0 20px 40px;
+    /* Add space and indentation */
+}
+
+li {
+    margin-bottom: 10px;
+    color: #264653;
+    /* Dark teal */
+    font-size: 1rem;
+}
+
+/* Ingredient Sections */
+h3 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+/* Steps Ordered List */
+ol {
+    counter-reset: step-counter;
+}
+
+ol li {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+ol li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter) ". ";
+    position: absolute;
+    left: 0;
+    color: #e76f51;
+    /* Accent color for step numbers */
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Hover Effects for Buttons or Links */
+button,
+a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
